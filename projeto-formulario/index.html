@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+</head>
+<body>
+
+    <header>
+        <h1>Formulário Animado</h1>
+    </header>
+    
+    <form action="pagina-processa-dados-do-form" method="post" id="form">
+        <section class="sessao1">
+            <div>
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" placeholder="Nome Completo"/>
+            </div>
+            <div>
+                <label for="profissao">Profissão:</label>
+                <input type="text" name="profissao" id="profissao" placeholder="Profissão">
+            </div>
+            <div>
+                <label for="mae">Mãe:</label>
+                <input type="text" name="mae" id="mae" placeholder="Nome da Mãe">
+            </div>
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" placeholder="xxx@.com" />
+            </div>
+        </section>
+
+        <section class="sessao2">
+            <div>
+                <label for="data">Data de Nascimento:</label>
+                <input type="date" name="data" id="data" placeholder="_/_/__">
+            </div>
+            <div>
+                <label for="telefone">Telefone:</label>
+                <input type="tel" name="telefone" id="telefone" placeholder="(00)000000-0000">
+            </div>
+            <div>
+                <label for="rg">RG:</label>
+                <input type="text" name="rg" id="rg" placeholder="00.000.000.-0">
+            </div>
+            <div>
+                <label for="cpf">CPF:</label>
+                <input type="text" name="cpf" id="cpf" placeholder="000.000.000-0000">
+            </div>
+        </section>
+
+        <div class="botao">
+            <div class="button1">
+                <button type="submit">Cadastrar</button>
+            </div>
+            <div class="button2">
+                <button type="reset" onclick="limparCampos()">Limpar Campos</button>
+            </div>
+        </div>
+    </form>
+
+    <script>
+
+        function limparCampos() {
+            // Obtém a referência do formulário
+            var formulario = document.getElementById('form');
+
+            // Usa a propriedade reset para limpar os campos
+            formulario.reset();
+        }
+
+    </script>
+
+</body>
+</html>
