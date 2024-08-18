@@ -20,7 +20,7 @@ function inLista(n, list) {
 }
 
 function adicionar() {
-    if (isNumero(num.balue) && !inLista(num.value, valores)) {
+    if (isNumero(num.value) && !inLista(num.value, valores)) {
         valores.push(Number(num.value))
         let item = document.createElement('option')
         item.text = `valor ${num.value} adicionado.`
