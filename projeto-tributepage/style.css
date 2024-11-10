@@ -39,6 +39,14 @@ body {
 .img {
     text-align: center;
     align-items: center;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 460px;
+    margin: 0 auto;
 }
 
 .legend {
@@ -68,8 +76,13 @@ body {
 .footer {
    background-color: blueviolet;
    color: #dddddd;
+   border-radius: 5px;
 }
 
 .footer a {
     color: white;
+}
+
+footer .reference {
+    color: rgb(190, 182, 170);
 }
